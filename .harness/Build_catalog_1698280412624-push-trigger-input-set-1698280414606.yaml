@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_catalog_1698280412624-push-trigger-input-set
+  identifier: Build_catalog_1698280412624pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: bodoru_test
+  pipeline:
+    identifier: Build_catalog_1698280412624
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

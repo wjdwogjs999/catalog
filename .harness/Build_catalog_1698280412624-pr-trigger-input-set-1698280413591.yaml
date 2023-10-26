@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_catalog_1698280412624-pr-trigger-input-set
+  identifier: Build_catalog_1698280412624prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: bodoru_test
+  pipeline:
+    identifier: Build_catalog_1698280412624
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

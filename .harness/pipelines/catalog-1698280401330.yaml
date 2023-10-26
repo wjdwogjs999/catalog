@@ -31,3 +31,23 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+  notificationRules:
+    - name: test
+      identifier: test
+      pipelineEvents:
+        - type: AllEvents
+        - type: PipelineStart
+        - type: PipelineEnd
+        - type: PipelineSuccess
+        - type: PipelineFailed
+        - type: StageFailed
+        - type: StageSuccess
+        - type: StageStart
+        - type: StepFailed
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - wjdwogjs999@naver.com
+      enabled: true
